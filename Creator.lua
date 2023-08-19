@@ -1,4 +1,4 @@
-local Root = script.parent
+local Root = G2L["1"]
 
 local Creator = {}
 
