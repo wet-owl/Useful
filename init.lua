@@ -1,7 +1,7 @@
 local Acrylic = {
-	AcrylicBlur = require(script.AcrylicBlur),
-	CreateAcrylic = require(script.CreateAcrylic),
-	AcrylicPaint = require(script.AcrylicPaint),
+	AcrylicBlur = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/AcrylicBlur.lua"))(),
+	CreateAcrylic = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/CreateAcrylic.lua"))(),
+	AcrylicPaint = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/AcrylicPaint.lua"))(),
 }
 
 function Acrylic.init()
