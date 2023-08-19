@@ -1,5 +1,5 @@
-local Root = script.Parent.Parent
-local Creator = require(Root.Creator)
+local Root = G2L["1"]
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Creator.lua"))()
 
 local function createAcrylic()
 	local Part = Creator.New("Part", {
