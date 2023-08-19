@@ -1,5 +1,5 @@
-local Creator = require(script.Parent.Parent.Creator)
-local AcrylicBlur = require(script.Parent.AcrylicBlur)
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Creator.lua"))()
+local AcrylicBlur = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/AcrylicBlur.lua"))()
 
 local New = Creator.New
 
@@ -107,13 +107,11 @@ return function(props)
 
 	local Blur
 
-	if require(script.Parent.Parent).UseAcrylic then
-		Blur = AcrylicBlur()
-		Blur.Frame.Parent = AcrylicPaint.Frame
-		AcrylicPaint.Model = Blur.Model
-		AcrylicPaint.AddParent = Blur.AddParent
-		AcrylicPaint.SetVisibility = Blur.SetVisibility
-	end
+	Blur = AcrylicBlur()
+	Blur.Frame.Parent = AcrylicPaint.Frame
+	AcrylicPaint.Model = Blur.Model
+	AcrylicPaint.AddParent = Blur.AddParent
+	AcrylicPaint.SetVisibility = Blur.SetVisibility
 
 	return AcrylicPaint
 end
