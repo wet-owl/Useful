@@ -1,4 +1,4 @@
-local Root = G2L["1"]
+local Root = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChildOfClass("Frame")
 local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Creator.lua"))()
 
 local function createAcrylic()
