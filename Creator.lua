@@ -1,4 +1,4 @@
-local Root = G2L["1"]
+local Root = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChildOfClass("Frame")
 
 local Creator = {}
 
