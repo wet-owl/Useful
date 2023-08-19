@@ -1,6 +1,6 @@
-local Creator = require(script.Parent.Parent.Creator)
-local createAcrylic = require(script.Parent.CreateAcrylic)
-local viewportPointToWorld, getOffset = unpack(require(script.Parent.Utils))
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Creator.lua"))()
+local createAcrylic = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/CreateAcrylic.lua"))()
+local viewportPointToWorld, getOffset = unpack(loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Utils.lua"))())
 
 local function createAcrylicBlur(distance)
 	local cleanups = {}
