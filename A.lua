@@ -1,8 +1,8 @@
 local Release = "v0.0.0"
-local ConfigFolder = "devtools"
-local ConfigExtension = ".ssync"
+local ConfigFolder = "Crown"
+local ConfigExtension = ".crown"
 
-local DevTools = {
+local CrownTools = {
 	Themes = {
 		Dark = {
 			PrimaryBackgroundColor = Color3.new(24, 24, 24),
@@ -103,7 +103,7 @@ function CreateBlankWindow()
 	return Interface
 end
 
-function DevTools:Init(Settings)
+function CrownTools:Init(Settings)
 	local Window = {}
 	local Interface = CreateBlankWindow()
 
@@ -128,7 +128,7 @@ function DevTools:Init(Settings)
 		if not UserValidated then
 			Interface:Destroy()
 
-			return error("DevTools Global Error: Forbidden")
+			return error("CrownTools Global Error: Forbidden")
 		end
 	end
 	
@@ -222,8 +222,8 @@ function DevTools:Init(Settings)
 
 	Profile.Username.TextScaled = true
 
-	Topbar.TextLabel.Text = Settings.Name or "SoftSync DevTools"
-	Main.Title.Text = Settings.Title or "DevTools"
+	Topbar.TextLabel.Text = Settings.Name or "SoftSync CrownTools"
+	Main.Title.Text = Settings.Title or "CrownTools"
 	Main.Team.Text = Settings.Subtitle or "by SoftSync"
 
 	function Window:SetProfileTitle(Title)
@@ -505,7 +505,7 @@ function DevTools:Init(Settings)
 				local _, err = pcall(Options.Callback)
 
 				if err then
-					print("DevTools Callback Error | "..err)
+					print("CrownTools Callback Error | "..err)
 				end
 			end)
 		end
@@ -574,7 +574,7 @@ function DevTools:Init(Settings)
 				end)
 
 				if err then
-					print("DevTools Callback Error | "..err)
+					print("CrownTools Callback Error | "..err)
 				end
 			end)
 			
@@ -651,7 +651,7 @@ function DevTools:Init(Settings)
 				end)
 
 				if err then
-					print("DevTools Callback Error | "..err)
+					print("CrownTools Callback Error | "..err)
 				end
 			end)
 
@@ -718,7 +718,7 @@ function DevTools:Init(Settings)
 				end)
 
 				if err then
-					print("DevTools Callback Error | "..err)
+					print("CrownTools Callback Error | "..err)
 				end
 			end)
 
@@ -889,21 +889,21 @@ function DevTools:Init(Settings)
 	return Window
 end
 
-DevTools.Player = {}
+CrownTools.Player = {}
 
-function DevTools.Player:Kill()
+function CrownTools.Player:Kill()
 	if Player.Character then
 		Player.Character:BreakJoints()
 	end
 end
 
-function DevTools.Player:Kick()
+function CrownTools.Player:Kick()
 	Player:Kick()
 
 	repeat until false
 end
 
-function DevTools.Player:SetSpeed(Speed)
+function CrownTools.Player:SetSpeed(Speed)
 	if Player.Character and Player.Character:FindFirstChild("Humanoid") then
 		local Humanoid = Player.Character:FindFirstChild("Humanoid")
 
@@ -911,7 +911,7 @@ function DevTools.Player:SetSpeed(Speed)
 	end
 end
 
-function DevTools.Player:SetJumpPower(JumpPower)
+function CrownTools.Player:SetJumpPower(JumpPower)
 	if Player.Character and Player.Character:FindFirstChild("Humanoid") then
 		local Humanoid = Player.Character:FindFirstChild("Humanoid")
 
@@ -919,4 +919,4 @@ function DevTools.Player:SetJumpPower(JumpPower)
 	end
 end
 
-return DevTools
+return CrownTools
