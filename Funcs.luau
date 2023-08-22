@@ -2,13 +2,13 @@ local bt = {}
 
 function bt:user()
     pcall(function()
-        return game:GetService("Players"):GetNameFromUserIdAsync(game.Players.LocalPlayer.UserId)
+        return game.Players.LocalPlayer.Username
     end)
 end
 
 function bt:userid()
     pcall(function()
-        return game:GetService("Players"):GetUserIdFromNameAsync(bt:user())
+        return game.Players.LocalPlayer.UserId
     end)
 end
 
