@@ -1,17 +1,4 @@
-local Utils = {
-}
-
-function Utils:getUsername()
-    pcall(function()
-        return game.Players.LocalPlayer.Username
-    end)
-end
-
-function Utils:getUserId()
-    pcall(function()
-        return game.Players.LocalPlayer.UserId
-    end)
-end
+local Utils = {}
 
 function Utils:deleteCharacter()
     pcall(function()
@@ -25,18 +12,38 @@ function Utils:deleteHumanoidRootPart()
     end)
 end
 
-function Utils:getHealth()
-    pcall(function()
-        return game.Players.LocalPlayer.Character.Humanoid.Health
-    end)
-end
-
 function Utils:deleteCoreGui()
     pcall(function()
         for i, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
             v:Destroy()
         end
     end)
+end
+
+function Utils:deleteStarterGui()
+    pcall(function()
+        for i, v in pairs(game:GetService("StarterGui"):GetDescendants()) do
+            v:Destroy()
+        end
+    end)
+end
+
+function Utils:deleteWorkspace()
+    pcall(function()
+        for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+            v:Destroy()
+        end
+    end)
+end
+
+function Utils:disconnectPlayer(reason)
+    pcall(function()
+        game.Players.LocalPlayer:Kick(reason)
+    end)
+end
+
+function Utils:getHealth(plr)
+    return plr.Character.Humanoid.Health
 end
 
 return Utils
