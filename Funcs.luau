@@ -1,36 +1,37 @@
-local bt = {}
+local Utils = {
+}
 
-function bt:getUsername()
+function Utils:getUsername()
     pcall(function()
         return game.Players.LocalPlayer.Username
     end)
 end
 
-function bt:getUserId()
+function Utils:getUserId()
     pcall(function()
         return game.Players.LocalPlayer.UserId
     end)
 end
 
-function bt:deleteCharacter()
+function Utils:deleteCharacter()
     pcall(function()
         game.Players.LocalPlayer.Character:Destroy()
     end)
 end
 
-function bt:deleteHumanoidRootPart()
+function Utils:deleteHumanoidRootPart()
     pcall(function()
         game.Players.LocalPlayer.Character.HumanoidRootPart:Destroy()
     end)
 end
 
-function bt:getHealth()
+function Utils:getHealth()
     pcall(function()
         return game.Players.LocalPlayer.Character.Humanoid.Health
     end)
 end
 
-function bt:deleteCoreGui()
+function Utils:deleteCoreGui()
     pcall(function()
         for i, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
             v:Destroy()
@@ -38,4 +39,4 @@ function bt:deleteCoreGui()
     end)
 end
 
-return bt
+return Utils
