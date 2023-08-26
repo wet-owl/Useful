@@ -27,3 +27,16 @@ local Tab1 = Window:CreateTab({ Name = "Tab1" })
 ```lua
 local Label1 = Tab1:CreateLabel("The text inside of here will automatically wrap, or if you want to create a new line manually you can use:\nUnderneath the line\n\nOn a seperate line\n\n\nEtc")
 ```
+<br>
+
+## To create an input box, you can use the code below:
+
+```lua
+local Input1 = Tab1:CreateInput({ Callback = function(var) 
+    if var == "Var1" then
+        print("e")
+    elseif var == "Var2" then
+        print("Var2!")
+    end
+end })
+```
