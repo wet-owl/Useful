@@ -11,14 +11,14 @@ local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-D
 ## To create a window, you will need to use the code below:
 
 ```lua
-local Window = SoftSync:Init({ Name = "Name of the window", Title = "Title above the Subtitle", Subtitle = "What goes under the title" })
+local Window = SoftSync:Init({ Name = "Example Script", Title = "Example from", Subtitle = "https://github.com/02-Dcs/Useful" })
 ```
 <br>
 
 ## To create a tab inside the window, use the code below:
 
 ```lua
-local Tab1 = Window:CreateTab({ Name = "Tab1" })
+local Tab1 = Window:CreateTab({ Name = "Examples" })
 ```
 <br>
 
@@ -32,7 +32,7 @@ local Label1 = Tab1:CreateLabel("The text inside of here will automatically wrap
 ## To create an input box, you can use the code below:
 
 ```lua
-local Input1 = Tab1:CreateInput({ Name = "Vars", Callback = function(input) 
+local Input1 = Tab1:CreateInput({ Name = "Input", Callback = function(input) 
     if input == "Var1" then
         print("Var1!")
     elseif input == "Var2" then
@@ -45,7 +45,7 @@ end})
 ## To create a large input box, you can use the code below:
 
 ```lua
-local LargeInput1 = Tab1:CreateLargeInput({ Name = "Numbers", Callback = function(input) 
+local LargeInput1 = Tab1:CreateLargeInput({ Name = "Large Input", Callback = function(input) 
     if input == "1" then
         print("2")
     elseif input == "2" then
