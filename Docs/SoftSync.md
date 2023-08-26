@@ -1,3 +1,7 @@
+<div align="center"><img src="https://svg-banners.vercel.app/api?type=rainbow&text1=SoftSync&width=800&height=400" alt ="Crown Admin"/></div>
+<br>
+<br>
+
 ## To get started, lets boot the library. This can be done by using the following code:
 
 ```lua
