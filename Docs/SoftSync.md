@@ -8,17 +8,10 @@ local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-D
 ```
 <br>
 
-## To create a window, you will need to use the code below:
+## To create a window, use the code below:
 
 ```lua
-local Window = SoftSync:Init({ Name = "Example Script", Title = "Example From", Subtitle = "https://github.com/02-Dcs/Useful/blob/main/Docs/SoftSync.md" })
-```
-<br>
-
-## To create a window with a background image, use the code below:
-
-```lua
-local Window = SoftSync:Init({Name = "Example Script", Title = "Example From", Subtitle = "https://github.com/02-Dcs/Useful/blob/main/Docs/SoftSync.md", LoadingBackgroundImage = "http://www.roblox.com/asset/?id=14531191031"})
+local Window = SoftSync:Init({Name = "Example Script", Title = "Example From", Subtitle = "https://github.com/02-Dcs/Useful/blob/main/Docs/SoftSync.md", LoadingBackgroundImage = "http://www.roblox.com/asset/?id=0"})
 ```
 <br>
 
