@@ -4,7 +4,7 @@
 ## To get started, lets boot the library. This can be done by using the following code:
 
 ```lua
-local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Library/SoftSync.luau"))()
+local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Useful/main/Library/SoftSync.luau"))()
 ```
 <br>
 
