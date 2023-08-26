@@ -1,7 +1,3 @@
-# This is the unofficial docs created by yours truly.
-<br>
-<br>
-
 ## To get started, lets boot the library. This can be done by using the following code:
 
 ```lua
