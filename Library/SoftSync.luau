@@ -2,7 +2,7 @@ local Release = "v0.0.0"
 local ConfigFolder = "SS"
 local ConfigExtension = ".ss"
 
-local CrownTools = {
+local SoftSync = {
 	Themes = {
 		Dark = {
 			PrimaryBackgroundColor = Color3.new(24, 24, 24),
@@ -103,7 +103,7 @@ function CreateBlankWindow()
 	return Interface
 end
 
-function CrownTools:Init(Settings)
+function SoftSync:Init(Settings)
 	local Window = {}
 	local Interface = CreateBlankWindow()
 
@@ -128,7 +128,7 @@ function CrownTools:Init(Settings)
 		if not UserValidated then
 			Interface:Destroy()
 
-			return error("CrownTools Global Error: Forbidden")
+			return error("SoftSync Global Error: Forbidden")
 		end
 	end
 	
@@ -222,8 +222,8 @@ function CrownTools:Init(Settings)
 
 	Profile.Username.TextScaled = true
 
-	Topbar.TextLabel.Text = Settings.Name or "SoftSync CrownTools"
-	Main.Title.Text = Settings.Title or "CrownTools"
+	Topbar.TextLabel.Text = Settings.Name or "SoftSync SoftSync"
+	Main.Title.Text = Settings.Title or "SoftSync"
 	Main.Team.Text = Settings.Subtitle or "by SoftSync"
 
 	function Window:SetProfileTitle(Title)
@@ -505,7 +505,7 @@ function CrownTools:Init(Settings)
 				local _, err = pcall(Options.Callback)
 
 				if err then
-					print("CrownTools Callback Error | "..err)
+					print("SoftSync Callback Error | "..err)
 				end
 			end)
 		end
@@ -574,7 +574,7 @@ function CrownTools:Init(Settings)
 				end)
 
 				if err then
-					print("CrownTools Callback Error | "..err)
+					print("SoftSync Callback Error | "..err)
 				end
 			end)
 			
@@ -651,7 +651,7 @@ function CrownTools:Init(Settings)
 				end)
 
 				if err then
-					print("CrownTools Callback Error | "..err)
+					print("SoftSync Callback Error | "..err)
 				end
 			end)
 
@@ -718,7 +718,7 @@ function CrownTools:Init(Settings)
 				end)
 
 				if err then
-					print("CrownTools Callback Error | "..err)
+					print("SoftSync Callback Error | "..err)
 				end
 			end)
 
@@ -889,21 +889,21 @@ function CrownTools:Init(Settings)
 	return Window
 end
 
-CrownTools.Player = {}
+SoftSync.Player = {}
 
-function CrownTools.Player:Kill()
+function SoftSync.Player:Kill()
 	if Player.Character then
 		Player.Character:BreakJoints()
 	end
 end
 
-function CrownTools.Player:Kick()
+function SoftSync.Player:Kick()
 	Player:Kick()
 
 	repeat until false
 end
 
-function CrownTools.Player:SetSpeed(Speed)
+function SoftSync.Player:SetSpeed(Speed)
 	if Player.Character and Player.Character:FindFirstChild("Humanoid") then
 		local Humanoid = Player.Character:FindFirstChild("Humanoid")
 
@@ -911,7 +911,7 @@ function CrownTools.Player:SetSpeed(Speed)
 	end
 end
 
-function CrownTools.Player:SetJumpPower(JumpPower)
+function SoftSync.Player:SetJumpPower(JumpPower)
 	if Player.Character and Player.Character:FindFirstChild("Humanoid") then
 		local Humanoid = Player.Character:FindFirstChild("Humanoid")
 
@@ -919,4 +919,4 @@ function CrownTools.Player:SetJumpPower(JumpPower)
 	end
 end
 
-return CrownTools
+return SoftSync
