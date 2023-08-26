@@ -5,6 +5,7 @@ local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-D
 ```
 
 # How to create a window
+## kewl
 
 ```lua
 local Window = SoftSync:Init({
