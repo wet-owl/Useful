@@ -1,6 +1,6 @@
 local Release = "v0.0.0"
-local ConfigFolder = "GG"
-local ConfigExtension = ".gg"
+local ConfigFolder = "SS"
+local ConfigExtension = ".ss"
 
 local CrownTools = {
 	Themes = {
