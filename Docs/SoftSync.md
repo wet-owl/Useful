@@ -25,14 +25,14 @@ local Window = SoftSync:Init({Name = "Example Script", Title = "Example From", S
 ## To create a tab inside the window, use the code below:
 
 ```lua
-local Tab1 = Window:CreateTab({ Name = "Examples" })
+local Tab1 = Window:CreateTab({ Name = "Tab1" })
 ```
 <br>
 
 ## To create a text label, you can use the code below:
 
 ```lua
-local Label1 = Tab1:CreateLabel("The text inside of here will automatically wrap, or if you want to create a new line manually you can use:\nUnderneath the line\n\nOn a seperate line\n\n\nEtc")
+local Label1 = Tab1:CreateLabel("The text inside of here will automatically wrap, or if you want to create a new line manually you can use:\nUnderneath the line\n\nOn a seperate line\n\n\n\nOn a claustrophobic line")
 ```
 <br>
 
