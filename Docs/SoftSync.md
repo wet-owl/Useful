@@ -1,18 +1,14 @@
 # This is the unofficial docs created by yours truly.
-
-
-
-
+<br>
+<br>
 
 ## To get started, lets boot the library. This can be done by using the following code:
 
 ```lua
 local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Library/SoftSync.luau"))()
 ```
-
-
-
-
+<br>
+<br>
 
 ## To actually utilize the library and create a window, you will need to use the code below:
 
@@ -23,10 +19,8 @@ local Window = SoftSync:Init({
     Subtitle = "What goes under the title"
 })
 ```
-
-
-
-
+<br>
+<br>
 
 ## Now that you've booted the library and created a window, you obviously want to display some information, so lets create a tab, a tab only needs one setting which is the Name, to create a tab you can use the code below:
 
@@ -35,10 +29,8 @@ local Tab1 = Window:CreateTab({
     Name = "Tab1"
 })
 ```
-
-
-
-
+<br>
+<br>
 
 ## To create a text label, you can use the code below:
 
