@@ -38,5 +38,24 @@ local Input1 = Tab1:CreateInput({ Callback = function(var)
     elseif var == "Var2" then
         print("Var2!")
     end
-end })
+end})
+```
+<br>
+<br>
+
+## A completed example:
+
+```lua
+local SoftSync = loadstring(game:HttpGet("https://raw.githubusercontent.com/02-Dcs/Test/main/Library/SoftSync.luau"))()
+local Window = SoftSync:Init({ Name = "Name of the window", Title = "Title above the Subtitle", Subtitle = "What goes under the title" })
+
+local Tab1 = Window:CreateTab({ Name = "Tab1" })
+local Label1 = Tab1:CreateLabel("The text inside of here will automatically wrap, or if you want to create a new line manually you can use:\nUnderneath the line\n\nOn a seperate line\n\n\nEtc")
+local Input1 = Tab1:CreateInput({ Callback = function(var) 
+    if var == "Var1" then
+        print("e")
+    elseif var == "Var2" then
+        print("Var2!")
+    end
+end})
 ```
