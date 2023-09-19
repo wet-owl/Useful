@@ -1,3 +1,4 @@
+local tmptmptmptmptmpa = [[
 local fonts = script;
 local content = game:GetService("ContentProvider");
 
@@ -637,3 +638,6 @@ end;
 wait(); -- top bar can mess with stuff if fonts called instantly
 
 return module;
+]]
+
+return tmptmptmptmptmpa
